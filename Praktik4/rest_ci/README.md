@@ -1,6 +1,5 @@
-##########################
-Belajar Penerapan REST API
-##########################
+# Belajar Penerapan REST API
+
 
 ******************
 Pengertian singkat
@@ -12,8 +11,7 @@ Pengertian singkat
 Sumber Rujukan
 **************
 
-Sumber materi diambil dari `CodePolitan
-<https://www.codepolitan.com/rest-api-server-sederhana-dengan-codeigniter-58901f324a29f>`_.
+Sumber materi diambil dari [CodePolitan](https://www.codepolitan.com/rest-api-server-sederhana-dengan-codeigniter-58901f324a29f)
 
 **************************
 Konfigurasi untuk rest api
@@ -25,32 +23,31 @@ Dalam pembuatan Rest API server diperlukan :
     Framework Codeigniter dan Library REST server dapat di unduh di link ini: https://github.com/ardisaurus/ci-restserver
     Postman
 
-Setelah semua tools yang diperlukan sudah siap,install Postman, kemudian extract Codeigniter dan library REST server yang telah didownload dan pindah ke dalam direktori xampp/htdocs ubah nama direktori hasil ekstrakan tadi dengan nama rest_ci. Hidupkan xampp webserver, masukkan link http://127.0.0.1/rest_ci/index.php/rest_server ke addres bar browser, jika berhasil maka akan muncul halaman utama Rest Server Tests.
-
-Buat database baru dengan nama "kontak" :
-
+### Konfigurasi database
+* Buat database dengan nama "kontak" :
+```
 CREATE DATABASE kontak;
-
-Buat tabel baru dengan nama "telepon" dengan field id (int 11 AUTO_INCREMENT), nama (varchar 30), nomor (varchar 11):
-
+```
+* Buat tabel baru dengan nama "telepon" :
+```
 USE kontak;
-CREATE TABLE IF NOT EXISTS `telepon` (
+CREATE TABLE IF NOT EXIST `telepon`(
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `nama` varchar(50) NOT NULL,
   `nomor` varchar(13) NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=8 ;
-
-Masukan beberapa data contoh :
-
+  PRIMARY KEY(`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=8;
+```
+* Masukkan contoh beberapa data :
+```
 USE kontak;
 INSERT INTO `telepon` (`id`, `nama`, `nomor`) VALUES
 (1, 'Orion', '08576666762'),
 (2, 'Mars', '08576666770'),
 (7, 'Alpha', '08576666765');
-
-Buka database.php pada rest_ci/application/config ubah menjadi
-
+```
+* Lakukan config database pada file database.php pada rest_ci/application/config :
+```
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 $active_group = 'default';
@@ -77,9 +74,16 @@ $db['default'] = array(
     'failover' => array(),
     'save_queries' => TRUE
 );
+```
 
-****************
-Metode penerapan
-****************
+### Penerapan Metode Rest 
 
+- GET
+  	`Get adalah sebuah akses untuk membaca sebuah inputan dari database.`
 
+- POST
+	`Post adalah sebuah akses untuk menambahkan data ke database.`
+	
+- PUT
+	`Put adalah sebuah akses untuk merubah data yang telah tersimpan dalam database.`
+	
