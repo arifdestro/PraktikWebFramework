@@ -21,7 +21,7 @@ Akun Login :
 ## Cara Penggunaan
 1. Jalankan XAMPP anda atau yang lain
 2. Buat Repository dan Masukkan hasil download anda kedalam repository
-3. Panggil Repository dengan http://localhost/(sesuai direktori anda) 
+3. Panggil Repository dengan http://localhost/(sesuai_direktori_anda) 
 4. Buat database baru dan import dari direktori folder database **DATABASE** dengan nama `sipedes.sql`
 5. Pastikan kode pada file `application/config/database.php` telah sama seperti baris kode berikut :
 
