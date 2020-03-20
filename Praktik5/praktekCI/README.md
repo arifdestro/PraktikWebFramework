@@ -1,6 +1,6 @@
 # Praktikum Tugas Web Framework
 
-Nama : Muhammad Arif A.F
+Nama : Muhammad Arif A.F /
 NIM  : E41181232
 
 # CRUD-With-Codeigniter
@@ -22,7 +22,7 @@ Akun Login :
 1. Jalankan XAMPP anda atau yang lain
 2. Buat Repository dan Masukkan hasil download anda kedalam repository
 3. Panggil Repository dengan http://localhost/(sesuai direktori anda) 
-4. Buat database baru dan import dari direktori folder database **DATABASE**
+4. Buat database baru dan import dari direktori folder database **DATABASE** dengan nama `sipedes.sql`
 5. Pastikan kode pada file `application/config/database.php` telah sama seperti baris kode berikut :
 
 ``` php
