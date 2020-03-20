@@ -15,7 +15,7 @@ class Kota extends AUTH_Controller
 		$data['dataKota'] 	= $this->M_kota->select_all();
 
 		$data['page'] 		= "kota";
-		$data['judul'] 		= "Data Dusun";
+		$data['judul'] 		= "Data Desa";
 		$data['deskripsi'] 	= "Manage Data Desa Kota Banyuwangi";
 
 		$data['modal_tambah_kota'] = show_my_modal('modals/modal_tambah_kota', 'tambah-kota', $data);
