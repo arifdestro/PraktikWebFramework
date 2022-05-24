@@ -1,2 +1,3 @@
 Merupakan file percobaan
 - Membuat commit 1
+- Melakukan pembenahan bug 1
