@@ -1,2 +1,3 @@
 Belajar dengan workflow
 - belajar git add
+- Merubah git add
