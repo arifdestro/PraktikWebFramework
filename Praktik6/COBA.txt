@@ -1,2 +1,5 @@
 Merupakan file percobaan
 - Membuat commit 1
+- Melakukan pembenahan bug 1
+- Perubahan baru, coba-coba merge tadi
+- Commit baru lagi
