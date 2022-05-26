@@ -3,3 +3,4 @@ Merupakan file percobaan
 - Melakukan pembenahan bug 1
 - Perubahan baru, coba-coba merge tadi
 - Commit baru lagi
+- Coba
